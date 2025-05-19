@@ -5,7 +5,6 @@ import {
   Container,
   Paper,
   Typography,
-  Box,
   Button,
   IconButton,
   Toolbar

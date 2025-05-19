@@ -14,7 +14,6 @@ import {
   Divider,
   Chip,
   Grid,
-  Button // Added Button for potential future use, not strictly needed for this exact layout yet
 } from '@mui/material';
 import { researchData } from '../data/researchData';
 
