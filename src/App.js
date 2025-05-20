@@ -148,7 +148,7 @@ function App() {
   }, [companyId, projectId]);
 
   let pageTitle = currentCompanyData ? currentCompanyData.companyName : "Customer Insights Platform";
-  if (location.pathname === '/briefing' || location.pathname === '/insights') {
+  if (location.pathname.startsWith('/briefing') || location.pathname.startsWith('/insights')) {
     if (projectId) {
       const project = currentCompanyData?.projects?.find(p => p.id === projectId);
       if (project) {
@@ -164,7 +164,7 @@ function App() {
   const handleDrawerOpen = () => setOpenDrawer(true);
   const handleDrawerClose = () => setOpenDrawer(false);
   const handleNavigation = (path) => navigate(path);
-  const isProjectPage = location.pathname === '/briefing' || location.pathname === '/insights';
+  const isProjectPage = location.pathname.startsWith('/briefing') || location.pathname.startsWith('/insights');
 
   const handleStartResearchFlow = () => {
     setIsInsightsEnabled(true);
@@ -188,18 +188,18 @@ function App() {
               <Box sx={{ flexGrow: 1 }} />
               <Box sx={{ display: 'flex' }}>
                 <Button 
-                  color={location.pathname === '/briefing' ? "primary" : "inherit"} 
+                  color={location.pathname.startsWith('/briefing') ? "primary" : "inherit"} 
                   component={RouterLink} 
                   to={`/briefing?company=${companyId}${projectId ? `&projectId=${projectId}` : ''}`}
-                  sx={{ fontWeight: location.pathname === '/briefing' ? 'bold' : 'normal' }}
+                  sx={{ fontWeight: location.pathname.startsWith('/briefing') ? 'bold' : 'normal' }}
                 >
                   Briefing
                 </Button>
                 <Button 
-                  color={location.pathname === '/insights' ? "primary" : "inherit"} 
+                  color={location.pathname.startsWith('/insights') ? "primary" : "inherit"} 
                   component={RouterLink} 
                   to={`/insights?company=${companyId}${projectId ? `&projectId=${projectId}` : ''}`}
-                  sx={{ fontWeight: location.pathname === '/insights' ? 'bold' : 'normal' }}
+                  sx={{ fontWeight: location.pathname.startsWith('/insights') ? 'bold' : 'normal' }}
                   disabled={!isInsightsEnabled}
                 >
                   Insights
