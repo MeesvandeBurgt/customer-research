@@ -53,6 +53,35 @@ Claire & George collaborates with hotels, tourism partners and local service pro
         }
       }
     ]
-  }
+  },
   // Future companies can be added here
+  rugennek: {
+    companyName: "Centrum Rug & Nek",
+    companyInfo: `Het bedrijf richt zich op het behandelen van rug- en nekklachten, sportblessures en biedt daarnaast aanvullende behandelmethodes aan zoals hyperbare zuurstoftherapie, shockwave-therapie en echografie. De organisatie hecht veel waarde aan de totale klantbeleving: de customer journey vormt een centraal uitgangspunt binnen de dienstverlening. Klantvriendelijkheid en een positieve ervaring voor de patiënt staan dan ook op de eerste plaats.\nHet centrum is een middelgroot bedrijf met circa 60 medewerkers, verdeeld over 8 vestigingen in de provincies Limburg en Noord-Brabant. Door de schaalgrootte en beperkte interne onderzoekscapaciteit is het voor de organisatie uitdagend om zelfstandig kwalitatief onderzoek te doen naar de klantreis en -beleving tijdens het behandeltraject. In de praktijk wordt er daarom vaak teruggevallen op eigen ervaringen, informele feedback van klanten of het inschakelen van een extern bureau. Dit maakt het verkrijgen van betrouwbare, gerichte en betaalbare inzichten lastig.\nJuist daarom zou het zeer waardevol zijn om op een efficiënte en toegankelijke manier kwalitatieve inzichten te verzamelen over de klantbeleving. Idealiter zou dit per klantensegment en per vestiging in kaart worden gebracht, zodat er een helder overzicht ontstaat van terugkerende ervaringen, positieve contactmomenten en concrete verbeterpunten. Dergelijke inzichten kunnen direct bijdragen aan het optimaliseren van de klantreis en het versterken van de kwaliteit van zorg en service binnen het centrum.`,
+    researchChallenge: `The primary challenge for Centrum Rug & Nek is to gain deep, qualitative insights into the client experience across their treatment journey and various locations. Due to limited internal research capacity, the center currently relies on informal feedback, making it difficult to obtain reliable, structured, and affordable insights. The goal is to efficiently collect and analyze client experiences to identify recurring themes, positive touchpoints, and concrete areas for improvement, ultimately enhancing the quality of care, service, and the overall customer journey, potentially segmented by client type and location.`,
+    potentialRQs: [
+      'Hoe ervaren klanten het traject van intake tot nazorg binnen de verschillende vestigingen?',
+      'Welke momenten in de klantreis worden als het meest positief en het meest negatief ervaren?',
+      'Hoe goed sluit de geboden behandeling aan op de verwachtingen van de klant?',
+      'In hoeverre voelen klanten zich gehoord, begrepen en betrokken bij hun behandelplan?',
+      'Welke elementen dragen het meest bij aan een positieve klantbeleving (bijv. communicatie, wachttijd, sfeer)?',
+      'Wat zijn de grootste frustraties of drempels die klanten ervaren tijdens hun behandelingstraject?',
+      'Hoe verschilt de klantbeleving tussen vestigingen of klantensegmenten (bijv. sporters, chronische patiënten, nieuwe klanten)?',
+      'Hoe ervaren klanten het contact met het personeel aan de balie en met de behandelend specialisten?'
+    ],
+    projects: [
+      {
+        id: 'rn_project_1',
+        title: 'Klantbeleving Behandeltraject',
+        date: '2024-05-21', // Example date
+        description: 'Een onderzoek naar de totale klantbeleving, van intake tot nazorg, om pijnpunten en verbeterkansen te identificeren binnen Centrum Rug & Nek.',
+        briefingState: {
+          companyInfo: `Het bedrijf richt zich op het behandelen van rug- en nekklachten, sportblessures en biedt daarnaast aanvullende behandelmethodes aan zoals hyperbare zuurstoftherapie, shockwave-therapie en echografie. De organisatie hecht veel waarde aan de totale klantbeleving: de customer journey vormt een centraal uitgangspunt binnen de dienstverlening. Klantvriendelijkheid en een positieve ervaring voor de patiënt staan dan ook op de eerste plaats.`,
+          learningObjectives: 'Hoe ervaren klanten het traject van intake tot nazorg binnen de verschillende vestigingen?',
+          participants: 10, // Example
+          showProposal: true 
+        }
+      }
+    ]
+  }
 }; 
